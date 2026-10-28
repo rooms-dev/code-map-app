@@ -23,6 +23,6 @@ The app is not signed yet.
 
 - **macOS**: unzip, move `code-map.app` to Applications, and clear the quarantine flag once: `xattr -dr com.apple.quarantine /Applications/code-map.app`. Or open it, then choose **Open Anyway** under System Settings → Privacy & Security.
 - **Windows**: if “Windows protected your PC” appears, choose **More info**, then **Run anyway**.
-- **Linux**: `chmod +x code-map-linux-x64.AppImage && ./code-map-linux-x64.AppImage`. It needs FUSE 2 (on Ubuntu, `libfuse2t64`).
+- **Linux**: `chmod +x code-map-linux-x64.AppImage && ./code-map-linux-x64.AppImage --no-sandbox`. It needs FUSE 2 (on Ubuntu, `libfuse2t64`). `--no-sandbox` is needed on Ubuntu 23.10 and later, which block the app's sandbox.
 
 Install and sign in to [Claude Code](https://claude.com/claude-code) before you start.
