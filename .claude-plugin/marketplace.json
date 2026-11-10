@@ -1,0 +1,28 @@
+{
+  "name": "code-contractor-develop",
+  "description": "Code Contractor's plugins for Claude Code. Develop builds: they sign in to the develop server.",
+  "owner": {
+    "name": "Code Contractor",
+    "url": "https://code-contractor.ai"
+  },
+  "plugins": [
+    {
+      "name": "code-map",
+      "description": "Build Code Maps of pull requests with your own Claude Code or Codex, and share them with your team on Code Contractor.",
+      "author": {
+        "name": "Code Contractor"
+      },
+      "homepage": "https://code-contractor.ai",
+      "keywords": [
+        "code-review",
+        "pull-request",
+        "code-map"
+      ],
+      "source": {
+        "source": "archive",
+        "url": "https://github.com/rooms-dev/code-map-app/releases/download/v0.1.7-develop/code-map-plugin.zip",
+        "sha256": "c53bda69321bd531090ef9b5183999863e9a1d5f29ae3137e4dcfd4ac4b3e43b"
+      }
+    }
+  ]
+}
