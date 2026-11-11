@@ -27,9 +27,10 @@ Get the latest version from the [Releases](https://github.com/rooms-dev/code-map
 | macOS (Apple silicon) | [code-map-mac-arm64.zip](https://github.com/rooms-dev/code-map-app/releases/latest/download/code-map-mac-arm64.zip) |
 | macOS (Intel) | [code-map-mac-x64.zip](https://github.com/rooms-dev/code-map-app/releases/latest/download/code-map-mac-x64.zip) |
 | Windows (x64) | [code-map-windows-x64-setup.exe](https://github.com/rooms-dev/code-map-app/releases/latest/download/code-map-windows-x64-setup.exe) |
+| Linux (x64, Debian/Ubuntu) | [code-map-linux-x64.deb](https://github.com/rooms-dev/code-map-app/releases/latest/download/code-map-linux-x64.deb) |
 | Linux (x64) | [code-map-linux-x64.AppImage](https://github.com/rooms-dev/code-map-app/releases/latest/download/code-map-linux-x64.AppImage) |
 
-Each release lists the files' SHA-256 in `SHA256SUMS`. The app updates itself when a new version comes out.
+Each release lists the files' SHA-256 in `SHA256SUMS`. The app updates itself when a new version comes out, except the `.deb`: install the new `.deb` the same way.
 
 ### Opening the app
 
@@ -37,7 +38,8 @@ The app is not signed yet.
 
 - **macOS**: unzip, move `code-map.app` to Applications, and clear the quarantine flag once: `xattr -dr com.apple.quarantine /Applications/code-map.app`. Or open it, then choose **Open Anyway** under System Settings → Privacy & Security.
 - **Windows**: if “Windows protected your PC” appears, choose **More info**, then **Run anyway**.
-- **Linux**: `chmod +x code-map-linux-x64.AppImage && ./code-map-linux-x64.AppImage --no-sandbox`. It needs FUSE 2 (on Ubuntu, `libfuse2t64`). `--no-sandbox` is needed on Ubuntu 23.10 and later, which block the app's sandbox.
+- **Linux (.deb)**: `sudo apt install ~/Downloads/code-map-linux-x64.deb`, then open Code Map from your app launcher (or run `code-map`).
+- **Linux (AppImage)**: `chmod +x code-map-linux-x64.AppImage && ./code-map-linux-x64.AppImage --no-sandbox`. It needs FUSE 2 (on Ubuntu, `libfuse2t64`). `--no-sandbox` is needed on Ubuntu 23.10 and later, which block the app's sandbox.
 
 When the app starts, choose **Sign in with Code Contractor**. The Dashboard opens in your browser; pick your organization and choose **Sign in**.
 
