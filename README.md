@@ -2,7 +2,7 @@
 
 Code Map is the desktop app of [Code Contractor](https://code-contractor.ai). It maps pull requests and whole repositories on your computer, with the Claude Code you already use.
 
-This repository holds the app's releases and the Claude Code plugin `/code-map`. To use either you need a Code Contractor account in an organization on Code Contractor (as a member who can view validations); both ask you to sign in with it. The AI work runs on your computer with your own Claude Code sign-in, so Code Contractor only stores the maps you share.
+This repository holds the app's releases and the Claude Code plugin `/code-map`. The app needs no account: install it and build maps right away. A Code Contractor account (as a member of an organization on Code Contractor who can view validations) is needed only to share maps with your team, which is what the plugin does, so the plugin asks you to sign in. The AI work runs on your computer with your own Claude Code sign-in, so Code Contractor only stores the maps you share.
 
 - [Desktop app](#desktop-app): build maps of projects, pull requests and features, and read them on your computer.
 - [Claude Code plugin](#claude-code-plugin-code-map): build the map of a pull request from Claude Code and share it with your team on the web.
@@ -41,7 +41,7 @@ The app is not signed yet.
 - **Linux (.deb)**: `sudo apt install ~/Downloads/code-map-linux-x64.deb`, then open Code Map from your app launcher (or run `code-map`).
 - **Linux (AppImage)**: `chmod +x code-map-linux-x64.AppImage && ./code-map-linux-x64.AppImage --no-sandbox`. It needs FUSE 2 (on Ubuntu, `libfuse2t64`). `--no-sandbox` is needed on Ubuntu 23.10 and later, which block the app's sandbox.
 
-When the app starts, choose **Sign in with Code Contractor**. The Dashboard opens in your browser; pick your organization and choose **Sign in**.
+The app works without signing in. To share a map with your team, choose **Share with team** on the map (or **Sign in** at the bottom of the sidebar): the Dashboard opens in your browser; pick your organization and choose **Sign in**.
 
 ### Using the app
 
