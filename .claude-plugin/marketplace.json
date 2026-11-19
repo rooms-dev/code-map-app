@@ -20,8 +20,8 @@
       ],
       "source": {
         "source": "archive",
-        "url": "https://github.com/rooms-dev/code-map-app/releases/download/v0.1.18/code-map-plugin.zip",
-        "sha256": "db37318a0910b2a88334d0a2e08a984cb9cce337cfc1580d8be99140a69e1b05"
+        "url": "https://github.com/rooms-dev/code-map-app/releases/download/v0.1.19/code-map-plugin.zip",
+        "sha256": "f6c4644b8afd54d81da658ec11a25de8f4e8973c80cbb9b203a01968993822d0"
       }
     }
   ]
